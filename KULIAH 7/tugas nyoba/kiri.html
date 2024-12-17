@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>Ini adalah file menu halaman web</title>
+    <!--memmanggil frame main untuk mengubah tampilan content-->
+    <base target="main">
+</head>
+
+<style>
+    :root {
+        --bg-color: #222327;
+        --text-color: #fff;
+        --main-color: #29fd53;
+    }
+
+    body {
+        background-color: var(--main-color)
+    }
+
+    .btn {
+        border: none;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        padding: 0.55rem 0;
+        font-weight: 600;
+        background: transparent;
+        margin: 0 0.5rem;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background: var(--main-color);
+        border-color: var(--main-color);
+        color: #fff;
+        transition: ease-in-out 0.3s;
+    }
+</style>
+
+<body>
+    <div class="kiri">
+        <a href="utama.html">
+            <button type="button" class="btn">HOME</button>
+        </a>
+        <br>
+        <br>
+        <a href="about.html">
+            <button type="button" class="btn">ABOUT</button>
+        </a>
+        <br>
+        <br>
+        <a href="contact.html">
+            <button type="button" class="btn">CONTACT</button>
+        </a>
+    </div>
+</body>
+
+</html>

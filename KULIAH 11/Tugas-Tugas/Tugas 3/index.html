@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Tugas Web</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<!-- Content -->
+
+<body>
+	<div class="hero">
+		<nav>
+			<h2 class="logo">Commi<span>ssion</span></h2>
+			<ul>
+				<li><a href="#aboutMe">About Me</a></li>
+				<li><a href="#works">My Works</a></li>
+				<li><a href="#priceList">Pricelist</a></li>
+				<li><a href="#termsGuide">Terms & Guidelines</a></li>
+				<li><a href="#Form">Contact Me</a></li>
+			</ul>
+			<a href="#" class="btn" onclick="alert('Thank you, For your Subscribe :D')">Subscribe</a>
+		</nav>
+
+		<div class="content">
+			<h5 id="greetings"></h5>
+			<h5 id="day"></h5> 
+			<h4>Hello, my name is</h4>
+			<h1>Jordy Lian <span><br> Ferdinand</span></h1>
+			<h3>video editor and motion artist.</h3>
+			<div class="newslatter">
+				<form>
+					<input type="email" name="email" id="mail" placeholder="Enter Your Email">
+					<input type="submit" name="submit" value="Lets Start">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<section class="about" id="aboutMe">
+		<div class="main">
+			<p style="color: white;">Click <br> Me ></p>
+			<a href="https://www.instagram.com/jordyy.lf/" target="_blank"><img src="img/jordy2.jpg"></a>
+			<div class="about-text">
+				<h2>About Me</h2>
+				<h5>Motion Artist <span>& Designer</span></h5>
+				<p>Hi! i'm Jordy known as Jordy Lian Ferdinand, i was born in Jakarta-Indonesia 12 February, and I'm a
+					fresh graduated highschool student. <br><br>
+					I started to learn and using After effects since 2017 and I'm a amateur video editor and motion
+					artist. <br><br> I usually make some amv's and posted on instagram but now i am focusing on making
+					music videos, intros, and some video streaming stuff</p>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Service -->
+	<div class="service" id="works">
+		<div class="title">
+			<h2>Jordy's Works!</h2>
+		</div>
+
+		<div class="box">
+			<div class="card">
+				<h5>Music Video</h5>
+				<div class="pra">
+					<div>
+						<iframe width="520" height="200" src="https://www.youtube.com/embed/mhpzUPpWD8g"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen>
+						</iframe>
+					</div>
+					<br><br>
+					<p style="text-align: center;">
+						<a class="button" href="https://www.instagram.com/axchiil/" target="_blank">View More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<h5>Intro | Debut</h5>
+				<div class="pra">
+					<div>
+						<video width="520" height="200" controls>
+							<source src="video/debut.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+				<br><br>
+				<p style="text-align: center;">
+					<a class="button" href="https://www.youtube.com/channel/UCuhinj9XxITF057iweuUHkA"
+						target="_blank">View More</a>
+				</p>
+			</div>
+
+			<div class="card">
+				<h5>Song</h5>
+				<div class="pra">
+					<div class="player">
+						<audio src="song/patient by jordy.mp3" style="background-color: #f1f3f4; border-radius: 3px;"
+							controls></audio>
+					</div>
+				</div>
+				<br><br>
+				<p style="text-align: center;">
+					<a class="button" href="https://soundcloud.com/notachil" target="_blank">View More</a>
+				</p>
+			</div>
+
+			<div class="card">
+				<h5>Poster</h5>
+				<div class="pra">
+					<img src="img/poster.jpg" alt="posterr">
+				</div>
+				<br><br>
+				<p style="text-align: center;">
+					<a class="button" onclick="alert('Cannot be accessed yet, wait a few more months.')">Coming Soon</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<!--Pricelist & Terms Of Service-->
+	<section class="price" id="priceList">
+		<div class="contain">
+			<div class="about-text">
+				<h2>Pricelist</h2>
+				<h5>these are some price lists that i can <span>offer to you</span></h5>
+				<div>
+					<table width="70%" class="rwd-table">
+						<tr>
+							<th>Video Commission Type</th>
+							<th>price rage (Starts from)</th>
+							<th>For Indonesian Only</th>
+						</tr>
+						<tr>
+							<td>Anime rap music video (per 1 minute)</td>
+							<td>70 USD</td>
+							<td>800k Rupiah</td>
+						</tr>
+						<tr>
+							<td>Complex cover music video (per 1 minute)</td>
+							<td>60 USD</td>
+							<td>769k Rupiah</td>
+						</tr>
+						<tr>
+							<td>Debut video (prices are rated for full length duration)</td>
+							<td>70 - 80 USD</td>
+							<td>1.009k Rupiah</td>
+						</tr>
+					</table>
+					<br>
+					<h5>the price may change depending on how complex the video you want. <br><span>example :</span>
+					</h5>
+				</div>
+			</div>
+		</div>
+		<div class="mid">
+			<table width="70%" class="rwd-table">
+				<tr>
+					<th>Video Commission Type</th>
+					<th>price rage (Starts from)</th>
+					<th>For Indonesian Only</th>
+					<th>Quantity</th>
+					<th>Total</th>
+					<th>In Indonesia</th>
+				</tr>
+				<tr>
+					<td>Anime rap music video (per 1 minute)</td>
+					<td><input id="angka1" type="number" value="70">USD</td>
+					<td><input id="angka2" type="number" value="1090000">Rupiah</td>
+					<td><input id="angka3" type="number" value="3">QTY</td>
+					<td id="total1"></td>
+					<td id="total2"></td>
+				</tr>
+				<tr>
+					<td>Complex cover music video (per 1 minute)</td>
+					<td><input id="angka4" type="number" value="60">USD</td>
+					<td><input id="angka5" type="number" value="935000">Rupiah</td>
+					<td><input id="angka6" type="number" value="5">QTY</td>
+					<td id="total3"></td>
+					<td id="total4"></td>
+				</tr>
+				<tr>
+					<td>Debut video (prices are rated for full length duration)</td>
+					<td><input id="angka7" type="number" value="80">USD</td>
+					<td><input id="angka8" type="number" value="1250000">Rupiah</td>
+					<td><input id="angka9" type="number" value="2">QTY</td>
+					<td id="total5"></td>
+					<td id="total6"></td>
+				</tr>
+			</table>
+
+		</div>
+		<div class="--tombol">
+			<button type="button" value="price" onclick="price()">Results</a></button>
+			<br><br>
+		</div>
+		<div class="terms" id="termsGuide">
+			<h2><u>Terms Of <span>Service</span></u></h2>
+			<br>
+			<ol style="color: white;">
+				<li><span>DO NOT CLAIM</span> my works as your own works</li>
+				<li>I have all the rights to <span>decline</span> the commissions</li>
+				<li>Please contact me for Commercial Use</li>
+				<li>Please credit me properly</li>
+				<li>Prices may changes ( depends on work difficulty )</li>
+			</ol>
+			<br>
+			<h2><u>Guide<span>lines</span></u></h2>
+			<br>
+			<ul style="color: white;">
+				<li>Please provide me all the assets before I start working <span>(ex: music, logo, etc.)</span></li>
+				<li>if you have specific style, colors, or design, please tell me</li>
+				<li><b>For Video Commission</b>: To prevent subtitle error, provide me the script.</li>
+				<li>Unless mentioned, all my works will be 1920*1080 25fps by default.</li>
+			</ul>
+			<br><br><br>
+			<h3>THANK YOU!</h3>
+			<button type="button"><a href="https://twitter.com/messages/compose?recipient_id=919170094592172032"
+					data-screen-name="@jordylf" style="color: white;" class="--tombol" target="_blank">Message Me On
+					Twitter For
+					Order</a></button>
+		</div>
+
+	</section>
+
+	<!--Contact-->
+
+	<div class="background" id="Form">
+		<div class="container">
+			<div class="card-container">
+				<div class="left">
+					<div class="left-container">
+						<h2>Fill The Form Beside</h2>
+						<p>&copy Jordy Lian Ferdinand</p>
+					</div>
+				</div>
+				<div class="right">
+					<div class="right-container">
+						<form action="">
+							<h2 class="lg-view">Contact Me</h2>
+							<br>
+							<input type="text" required placeholder="Name" id="nama">
+							<input type="email" required placeholder="Email" id="Email">
+							<input type="number" placeholder="Age" id="usia">
+							<input type="phone" placeholder="No. Handphone" autocomplete="off" id="telpon">
+							<textarea rows="10" placeholder="Message" id="pesan"></textarea>
+							<br><br>
+							<button onclick="send(event)">Send</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<footer>
+		<p>Jordy Lian Ferdinand</p>
+		<p>For more information you can contact me on:</p>
+		<div class="social">
+			<a href="https://twitter.com/jordylf" target="_blank"><i class="fab fa-twitter"></i></a>
+			<a href="https://www.instagram.com/axchiil/" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a href="https://github.com/jordylf" target="_blank"><i class="fab fa-github"></i></a>
+		</div>
+		<div class="time">
+			<a type="button" onclick="document.getElementById('tanggal').innerHTML = Date()">Click If You Want To See A
+				Date</a>
+			<p id="tanggal"></p>
+		</div>
+		<p class="end">CopyRight &copy Jordy Lian Ferdinand</p>
+	</footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>

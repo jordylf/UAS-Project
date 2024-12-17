@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="style.css">
+        <title>Register</title>
+    </head>
+
+    <body>  
+        <div>
+            <h1 id="title">Pengisian Form</h1>
+            <p id="title_2">Isi Sesuai Biodata Anda!</p>
+            <br>
+        </div>
+
+        <form action="utama.html">
+            <fieldset class="group">
+                <div class="wrap">
+                    <label for="nama"><strong>Nama Lengkap</strong></label>
+                    <input type="text" name="nim" required placeholder="Isi Nama Anda">
+                </div>
+
+                <div class="wrap">
+                    <label for="nim"><strong>NIM</strong></label>
+                    <input type="number" name="nim" required placeholder="Isi NIM Anda">
+                </div>
+            </fieldset> 
+
+            <div class="wrap">
+                <label for="notelfon"><strong>No. Handphone</strong></label>
+                <input type="number" name="telfon" required placeholder="Isi No. Hp Anda">
+            </div>
+
+            <div class="wrap">
+                <label><strong>Anda Kerja Di Bidang Apa?</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>Front-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backend">Back-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="fullstack">Fullstack
+                </label>
+            </div>
+
+            <div class="wrap">
+                <label for="developer"><strong>Apa Tingkat Developer Mu?</strong></label>
+                <select id="developers" required>
+                  <option selected disabled value="">Pilih</option>
+                  <option>Junior</option>
+                  <option>Mid</option>
+                  <option>Senior</option>
+                </select>
+            </div>
+
+            <fieldset class="group">
+                <div id="check">
+                    <label><strong>Pilih Sesuai Yang Anda Bisa:</strong></label><br><br>
+                    <input type="checkbox" name="seleksi1" value="HTML">
+                    <label for="seleksi1"> HTML</label>
+                    <input type="checkbox" name="seleksi2" value="CSS">
+                    <label for="seleksi2"> CSS</label>
+                    <input type="checkbox" name="seleksi3" value="JavaScript">
+                    <label for="seleksi3"> JavaScript</label>
+                    <input type="checkbox" name="seleksi4" value="PHP">
+                    <label for="seleksi4"> PHP</label>
+                    <input type="checkbox" name="seleksi5" value="C#">
+                    <label for="seleksi5"> C#</label>
+                    <input type="checkbox" name="seleksi6" value="Python">
+                    <label for="seleksi6"> Python</label>
+                    <input type="checkbox" name="seleksi7" value="Java">
+                    <label for="seleksi7"> Java</label>
+                </div>
+            </fieldset>
+
+            <div class="wrap">
+                <br>
+                <label for="Eksperiment anda dalam dunia IT"><strong>Sampaikan Komentar Anda Disini</strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="Eksperiment"></textarea>
+            </div>
+
+            <button input type="submit" class="btn"><a href="utama.html" class="linked" onclick="alert('Anda Berhasil Register, SELAMAT DATANG!');">Submit</a></button>            
+
+        </form>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+
+</html>
+
+
+

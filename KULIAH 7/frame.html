@@ -1,0 +1,18 @@
+<frameset rows="64,*,50" frameborder="1">
+    <!--Penjelasan Coding rows Atribut ini cara kerjanya untuk mengatur ukuran web,
+    atas ke bawah atau vertical. Cara mendefinisikan lebar framenya juga sama. Misal
+    rows="10%, 40%, 30%, 20%".-->
+    <!--Penjelasan frameborder adalah untuk meembuat garis diantara web-->
+    <frame name="top" scrolling="no" noresize target="contents" src="atas.html">
+        <!-- noresize adalah elemen yang tidak dapat diubah ukurannya oleh
+    pengguna.
+    Secara default, setiap <frame> di <frameset> dapat diubah ukurannya-->
+        <frameset cols="150,*">
+            <!-- fungsi contents untuk membuat menu di kiri-->
+            <frame name="contents" target="main" src="kiri.html">
+                <!--fungsi main adalah memunculkan pertama kali saat web dibuka-->
+                <frame name="main" src="utama.html" scrolling="no">
+        </frameset>
+        <!--fungsi bottom untuk membuat footer-->
+        <frame name="bottom" scrolling="no" noresize target="contents" src="bawah.html">
+</frameset>

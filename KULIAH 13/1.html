@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NO. 1</title>
+
+    <style>
+        body {
+            background-color: yellow;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .justify {
+            text-align: justify;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h3>1. Menambahkan button/tombol</h3>
+    <div class="nama">
+        <p>Nama : Jordy Lian Ferdinand <br> NIM : 2022230009</p>
+    </div>
+    <div class="container">
+        <h3>1.)</h3>
+        <button onclick="displayProducts()">Tampilkan Coding 1</button>
+        <br>
+        <div id="hasil"></div>
+    </div>
+    <div class="container">
+        <h3>2.)</h3>
+        <button onclick="displayList()">Tampilkan Coding 2</button>
+        <br>
+        <div id="hasil2"></div>
+    </div>
+    <div class="container">
+        <h3>3.)</h3>
+        <button onclick="displayList2()">Tampilkan Coding 3</button>
+        <br>
+        <div class="justify">
+            <div id="hasil3"></div>
+        </div>
+    </div>
+</body>
+<script>
+    // Untuk Coding 1
+    function displayProducts() {
+        var products = ["Senter", "Radio", "Antena", "Obeng"];
+        document.getElementById("hasil").innerHTML = products[1];
+    }
+
+    // Untuk Coding 2
+    function displayList() {
+        var products = ["Senter", "Radio", "Antena", "Obeng"];
+        var list = "<h3>Daftar Produk:</h3> <ol>";
+        for (let i = 0; i < products.length; i++) {
+            list += `<li>${products[i]}</li>`;
+        }
+        list += ("</ol>");
+        document.getElementById("hasil2").innerHTML = list;
+    }
+
+    // Untuk Coding 3
+    function displayList2() {
+        var products = ["Senter", "Radio", "Antena", "Obeng"];
+        var list = "Sebelum Penambahan : <br>" + products + "<br> ----------------------- <br>";
+
+        // Penambahan Produk
+        products.push("Televisi");
+        products.push("Linggis");
+        products.push("Kursi");
+        list += "Setelah Penambahan : <br>" + products;
+        document.getElementById("hasil3").innerHTML = list;
+    }
+</script>
+
+</html>

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap%27');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ECF1FA;
+    font-size: 1em;
+    color: #59429d;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.--tagline {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    padding: 8px 16px;
+    border-radius: 8px 8px 0 0;
+    background-color: #D81B60;
+    color: #FFFFFF;
+    font-weight: bold;
+    transform: translateX(-50%);
+    transition: padding .25s ease-out;
+    cursor: pointer;
+}
+
+.--tagline a {
+    color: #FFFFFF;
+}
+
+.--tagline:hover {
+    padding: 16px;
+}
+
+#title {
+    font-family: sans-serif;
+    color: #380B61;
+    padding-left: 9rem;
+}
+
+#title_2 {
+    font-family: sans-serif;
+    color: #380B61;
+    padding-left: 7.5rem;
+}
+
+#check {
+    display: inline-block;
+}
+
+
+fieldset {
+    color: #E91E63;
+    border: 0;
+}
+
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #E91E63;
+    border-radius: 5px;
+}
+
+.group:before, .group:after {
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.wrap {
+    margin-bottom: 1em;
+}
+
+.wrap label {
+    margin-bottom: 0.2em;
+    color: #E91E63;
+    display: block;
+}
+
+fieldset.group .wrap {
+    float: left;
+    margin-right: 1em;
+}
+
+.wrap input[type="text"], .wrap input[type="number"], .wrap select, .wrap textarea {
+    padding: 0.2em;
+    border: 1px solid #E91E63;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.wrap select option {
+    padding-right: 1em;
+}
+
+.wrap input:focus, .wrap select:focus, .wrap textarea:focus {
+    background: #d8648b;
+}
+
+.btn {
+    font-size: 1.2em;
+    background: #E91E63;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn:hover {
+    background: #d8648b;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+
+.btn, select {
+    cursor: pointer;
+}
+
+.linked {
+    text-decoration: none;
+    color: white;
+}

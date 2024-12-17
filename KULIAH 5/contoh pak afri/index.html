@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulir</title>
+</head>
+
+<body bgcolor="pink">
+    <center>
+        <h2> Tugas Pertama <h2>
+    </center>
+    <fieldset style="width: 70% ; margin: auto ;">
+        <legend>
+            <p><b> Formulir Isian </b></p>
+        </legend>
+        <form>
+            <table width="100%">
+                <tr>
+                    <td><b>Nama*</b></td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" name="nama" size="40" required placeholder="Input Nama Anda">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" value="L" checked name="jkl" />Laki-laki
+                        <input type="radio" value="p" name="jkl" />Perempuan
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>:</td>
+                    <!--rowsnya = Tinggi, cols = Lebar-->
+                    <td><textarea name="alamat" cols="100" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Propinsi</td>
+                    <td>:</td>
+                    <td>
+                        <select name="propinsi">
+                            <option>Jawa Barat</option>
+                            <option>Jawa Tengah</option>
+                            <option>Jawa Timur</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Hobi </td>
+                    <td>:</td>
+                    <td>
+                        <input type='checkbox' name='hobi' value='basket' />Basket
+                        <input type='checkbox' name='hobi2' value='Sepak Bola' />Sepak Bola
+                        <input type='checkbox' name='hobi3' value='Membaca' />Membaca
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kelas:</td>
+                    <td>:</td>
+                    <td><input type="text" name="nama" size="60" Value="Web desain" readonly></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="jekel" value="perempuan">Perempuan
+                        <br>
+                        <input type="radio" name="jekel" value="laki-laki">Laki-Laki
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nim anda</td>
+                    <td>:</td>
+                    <td>
+                        <input type="number" name="Nim ANda" min="1" max="99999999999" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pilihan Kursus</td>
+                    <td>:</td>
+                    <td>
+                        <input type="file" name="kursus" value="inggris">*file harus gambar
+                    </td>
+                </tr>
+            </table>
+            <p><input type="submit" value="Submit" name="submit"><input type="reset" value="Reset" name="reset"></p>
+        </form>
+    </fieldset>
+    <Center><a style="text-decoration: none; color: red;" href="index2.html">-Link Tugas Web Gabungan semua materi-</a></Center>
+</body>
+</html>

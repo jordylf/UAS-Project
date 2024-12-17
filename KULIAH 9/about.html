@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap%27');
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+
+    *,
+    html {
+        padding: 0;
+        margin: 0;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #ECF1FA;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .--tagline {
+        position: fixed;
+        left: 50%;
+        bottom: 0;
+        padding: 8px 16px;
+        border-radius: 8px 8px 0 0;
+        background-color: #D81B60;
+        color: #FFFFFF;
+        font-weight: bold;
+        transform: translateX(-50%);
+        transition: padding .25s ease-out;
+        cursor: pointer;
+    }
+
+    .--tagline a {
+        color: #FFFFFF;
+    }
+
+    .--tagline:hover {
+        padding: 16px;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+        padding: 16px 15%;
+        background-color: #FFFFFF;
+        border-bottom: 1px solid rgba(166, 166, 166, .16);
+        box-shadow: 0 4px 12px rgba(77, 77, 77, .23)
+    }
+
+    header .--header_nav {
+        justify-self: flex-end;
+    }
+
+    header .--header_nav p {
+        display: inline-block;
+        margin-right: 8px;
+    }
+
+    header h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    header h3 span {
+        color: #E91E63;
+    }
+
+    .--btn {
+        display: inline-block;
+        padding: 12px 32px;
+        background-color: #777777;
+        color: #FFFFFF;
+        border-radius: 4px;
+        font-size: .85rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .--btn.--btn_pink {
+        background-color: #E91E63;
+    }
+
+    .--btn.--btn_pink:hover {
+        background-color: #95103d;
+        transition: ease-in-out .2s;
+    }
+
+    .nav {
+        width: 70%;
+        padding: 8px 15%;
+        background-color: #212121;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .nav ul li {
+        display: inline-block;
+        margin: 0 16px;
+    }
+
+    .nav ul li:first-child {
+        margin-left: 0;
+    }
+
+    .nav ul li a {
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+
+    .nav ul li a:hover {
+        transition: ease-in .2s;
+        color: #E91E63;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 5rem;
+        text-align: center;
+    }
+
+    .wrapper h1 {
+        font-size: 7rem;
+        text-transform: uppercase;
+    }
+
+    .wrapper h1 span {
+        color: #E91E63;
+    }
+
+    .wrapper h2 {
+        font-weight: 600;
+    }
+
+    .content {
+        margin-top: 1.5rem;
+        margin-left: 25rem;
+        text-align: justify;
+    }
+
+    .content h5 {
+        color: #E91E63;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .table-all {
+        padding-left: 50vh;
+    }
+
+    .rwd-table {
+        padding: 0 2em;
+        background: #E91E63;
+        color: #fff;
+        border-radius: .4em;
+        overflow: hidden;
+        font-family: Montserrat, sans-serif;
+        text-align: center;
+    }
+
+    th,
+    td {
+        margin: .5em .5em;
+    }
+
+    th,
+    td:before {
+        color: #fff;
+    }
+
+    .time {
+        text-align: center;
+    }
+
+    .time a {
+        background-color: #E91E63;
+        padding: 0 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .time a:hover{
+        background-color: #95103d;
+    }
+</style>
+
+<body>
+    <header id="allButton">
+        <div class="--header_logo">
+            <a>
+                <h3><span>TUGAS</span> Web by Jordy</h3>
+            </a>
+        </div>
+        <div class="--header_nav">
+            <a href="register.html" class="--btn --btn_pink">Logout</a>
+        </div>
+    </header>
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="utama.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About Me</a>
+            </li>
+            <li>
+                <a href="artikel.html">Article</a>
+            </li>
+            <li>
+                <a href="video.html">My Video</a>
+            </li>
+            <li>
+                <a href="song.html">My Song</a>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <div class="wrapper">
+        <h1>hi<span>!</span></h1>
+        <h2><i>TERIMA KASIH SUDAH REGISTRASI UNTUK MELIHAT WEB TUGAS SAYA :D</i></h2>
+    </div>
+    <div class="content">
+        <h3>Perkenalkan</h3>
+        <p>Nama Saya Jordy Lian Ferdinand</p>
+        <p>Saya adalah Mahasiswa Teknologi Informasi, Universitas Darma Persada.</p>
+        <p>Saya suka Internet, Teknologi, dan Membangun hal-hal yang indah.</p>
+        <br>
+        <h3>More About Me :</h3>
+        <h5><i>Apa Saja Hobi Mu?</i></h5>
+        <ol>
+            <li>Ngedit</li>
+            <li>Coding</li>
+            <li>Makan</li>
+            <li>Mandi</li>
+            <li>Tidur</li>
+        </ol>
+    </div>
+    <br>
+
+    <h2>Table List Top 3 Film Kesukaan Saya Yang Mungkin Anda Tertarik</h2>
+    <div class="table-all">
+        <table width="70%" class="rwd-table">
+            <tr>
+                <th>Judul Film</th>
+                <th>Genre</th>
+                <th>Tahun</th>
+                <th>Penilaian Saya</th>
+            </tr>
+            <tr>
+                <td>Star Wars</td>
+                <td>Adventure, Sci-fi</td>
+                <td>1977</td>
+                <td>10/10</td>
+            </tr>
+            <tr>
+                <td>The God Father</td>
+                <td>Mafia, Drama</td>
+                <td>1972</td>
+                <td>10/10</td>
+            </tr>
+            <tr>
+                <td>The Dark Knight</td>
+                <td>Action, Superhero</td>
+                <td>2008</td>
+                <td>10/10</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div class="time">
+        <a type="button" onclick="document.getElementById('tanggal').innerHTML = Date()">Klik Ini Untuk
+            Melihat Waktu Dan Tanggal.</a>
+        <p id="tanggal"></p>
+    </div>
+    <br>
+    <h3 align="center"><I>Mau Eksplor Web Saya Lebih Dalam Lagi? <a href="#allButton" style="color: #E91E63 ">Klik
+                Ini</a> <br> Dan Klik Menu Yang Ada Diatas</I></h3>
+    <br>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $('body').append(`<div class="--tagline"><a href="https://www.instagram.com/jordyy.lf/" target="_blank">#JordyMadeThis</a></div>`);
+    document.write("2022 &copy Jordy Lian Ferdinand");
+    console.log("Ini Menu Tentang Saya")
+</script>
+
+</html>

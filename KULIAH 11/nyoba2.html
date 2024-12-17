@@ -1,0 +1,23 @@
+<html>
+
+<body>
+    <p>Tekan , Hari Ini Pagi, Siang Atau Malam:</p>
+    <button onclick="Waktu()">Test Waktu</button>
+    <p id="Coba"></p>
+    <script>
+        function Waktu() {
+            var keterangan;
+            var time = new Date().getHours();
+            if (time < 10) {
+                keterangan = "Selamat Pagi";
+            } else if (time < 20) {
+                keterangan = "Selamat Siang/Petang";
+            } else {
+                keterangan = "Selamat Malam";
+            }
+            document.getElementById("Coba").innerHTML = keterangan;
+        }
+    </script>
+</body>
+
+</html>

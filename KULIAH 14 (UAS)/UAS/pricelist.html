@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordy's Commission</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="tm-header" id="tm-header">
+        <div class="tm-header-wrapper">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="tm-site-header">
+                <div class="mb-3 mx-auto tm-site-logo"><i class="fas fa-user fa-2x"></i></div>
+                <h1 class="text-center">Jordy Commission</h1>
+                <p class="text-center text-success" id="hari"></p>
+            </div>
+            <nav class="tm-nav" id="tm-nav">
+                <ul>
+                    <li class="tm-nav-item"><a href="about.html" class="tm-nav-link">
+                            <i class="fas fa-home"></i>
+                            Home & About
+                        </a></li>
+                    <li class="tm-nav-item"><a href="article.html" class="tm-nav-link">
+                            <i class="fas fa-newspaper"></i>
+                            Article
+                        </a></li>
+                    <li class="tm-nav-item"><a href="post.html" class="tm-nav-link">
+                            <i class="fas fa-pen"></i>
+                            My Works
+                        </a></li>
+                    <li class="tm-nav-item active"><a href="pricelist.html" class="tm-nav-link">
+                            <i class="fas fa-money-bill"></i>
+                            Pricelist
+                        </a></li>
+                    <li class="tm-nav-item"><a href="terms.html" class="tm-nav-link">
+                            <i class="fas fa-lock"></i>
+                            Terms & Guidelines
+                        </a></li>
+                    <li class="tm-nav-item"><a href="contact.html" class="tm-nav-link">
+                            <i class="far fa-comments"></i>
+                            Contact Me
+                        </a></li>
+                    <li class="tm-nav-logout"><a href="login.html" class="tm-nav-link-logout">
+                            Logout
+                        </a></li>
+                </ul>
+            </nav>
+            <p class="tm-mb-80 pr-5 text-white">
+                Hello! i'm Jordy -<br>
+                video editor and motion artist since 2018
+            </p>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <main class="tm-main">
+            <div class="row tm-row tm-mb-45">
+                <div class="col-12">
+                    <hr class="tm-hr-primary tm-mb-35">
+                </div>
+            </div>
+            <h2 class="text-center">Pricelist</h2> <br>
+            <table class="table table-condensed">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Video Commission Type</th>
+                        <th scope="col">price rage (Starts from)</th>
+                        <th scope="col">For Indonesian Only</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Anime rap music video (per 1 minute)</td>
+                        <td>70 USD</td>
+                        <td>800k Rupiah</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Complex cover music video (per 1 minute)</td>
+                        <td>60 USD</td>
+                        <td>769k Rupiah</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Debut video (prices are rated for full length duration)</td>
+                        <td>70 - 80 USD</td>
+                        <td>1.009k Rupiah</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <h4 class="text-center">The Price May Change Depending On How Complex The Video You Want.</h4><br>
+            <h4 class="text-center text-danger">Example :</h4>
+            <div class="table-responsive-sm">
+                <table class="table table-condensed">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Video Commission Type</th>
+                            <th scope="col">price rage (Starts from)</th>
+                            <th scope="col">For Indonesian Only</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">In Indonesia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Anime rap music video (per 1 minute)</td>
+                            <td><input id="angka1" type="number" value="70">USD</td>
+                            <td><input id="angka2" type="number" value="1090000">Rupiah</td>
+                            <td><input id="angka3" type="number" value="3">QTY</td>
+                            <td id="total1"></td>
+                            <td id="total2"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Complex cover music video (per 1 minute)</td>
+                            <td><input id="angka4" type="number" value="60">USD</td>
+                            <td><input id="angka5" type="number" value="935000">Rupiah</td>
+                            <td><input id="angka6" type="number" value="5">QTY</td>
+                            <td id="total3"></td>
+                            <td id="total4"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Debut video (prices are rated for full length duration)</td>
+                            <td><input id="angka7" type="number" value="80">USD</td>
+                            <td><input id="angka8" type="number" value="1250000">Rupiah</td>
+                            <td><input id="angka9" type="number" value="2">QTY</td>
+                            <td id="total5"></td>
+                            <td id="total6"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text-center">
+                    <button type="button" value="price" onclick="price()" class="tm-btn-primary">Results</a></button>
+                </div> <br>
+
+                <div class="text-center">
+                    <a href="https://twitter.com/messages/compose?recipient_id=919170094592172032"
+                        data-screen-name="@jordylf" class="btn" target="_blank">Message Me On Twitter For Order</a>
+                </div> <br>
+                <footer class="row tm-row">
+                    <div class="col-md-6 col-12 tm-color-gray">
+                        Design: <a rel="nofollow" target="_blank" href="https://www.instagram.com/axchiil/"
+                            class="tm-external-link">Jordy</a>
+                    </div>
+                    <div class="col-md-6 col-12 tm-color-gray tm-copyright">
+                        Copyright 2023 &copy Jordy Lian Ferdinand.
+                    </div>
+                </footer>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operasi Hitung</title>
+</head>
+
+<style>
+    body {
+        background-color: rgb(132, 129, 129);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h3 {
+        padding-top: 50px;
+    }
+
+</style>
+
+<body>
+    <center>
+        <h2><u>Operasi Perhitungan</u></h2>
+        <input type="number" id="nilai1" placeholder="input angka pertama">
+        <br><br>
+        <input type="number" id="nilai2" placeholder="input angka kedua">
+        <br><br>
+        <input type="submit" value="Proses" onclick="proses()">
+        <p id="hasilTambah"></p>
+        <p id="hasilKurang"></p>
+        <p id="hasilKali"></p>
+        <p id="hasilBagi"></p>
+        <p id="hasilAkar1"></p>
+        <p id="hasilAkar2"></p>
+        <p id="hasilKuadrat1"></p>
+        <p id="hasilKuadrat2"></p>
+
+        <h3><a href="Tugas 2/index.html">KE TUGAS 2</a></h3>
+    </center>
+    <script>
+        function proses(){
+            var x = document.getElementById("nilai1").value;
+            var y = document.getElementById("nilai2").value;
+            var tambah = (parseInt(x) + parseInt(y));
+            var kurang = x - y;
+            var kali = x * y;
+            var bagi = x / y;
+            var akar1 = Math.sqrt(x);
+            var akar2 = Math.sqrt(y);
+            var kuadrat1 = Math.pow(x, 2);
+            var kuadrat2 = y * y;
+            document.getElementById("hasilTambah").innerHTML = "Hasil "+  x + " " + "+" + " " + y + " adalah: " + tambah;
+            document.getElementById("hasilKurang").innerHTML = "Hasil "+  x + " " + "-" + " " + y + " adalah: " + kurang;
+            document.getElementById("hasilKali").innerHTML = "Hasil "+  x + " " + "x" + " " + y + " adalah: " + kali;
+            document.getElementById("hasilBagi").innerHTML = "Hasil "+  x + " " + "/" + " " + y + " adalah: " + bagi;
+            document.getElementById("hasilAkar1").innerHTML = "Hasil Akar nilai1 (" + x + ") adalah: " + akar1;
+            document.getElementById("hasilAkar2").innerHTML = "Hasil Akar nilai2 (" + y + ") adalah: " + akar2;
+            document.getElementById("hasilKuadrat1").innerHTML = "Hasil Kuadrat nilai1 (" + x + ") adalah: " + kuadrat1;
+            document.getElementById("hasilKuadrat2").innerHTML = "Hasil Kuadrat nilai2 (" + y + ") adalah: " + kuadrat2;
+        }
+    </script>
+</body>
+</html>

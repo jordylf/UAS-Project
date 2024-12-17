@@ -1,0 +1,44 @@
+*
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: pink;
+}
+
+h1 {
+    background-color: rgb(122, 71, 71);
+    color: white;
+}
+
+.hello {
+    background-color: aqua;
+    color: rebeccapurple;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#hobby {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: white;
+    list-style-type: none;
+    padding: 20px;
+    color: rgb(210, 207, 15);
+    margin: 5px;
+}
+
+.footer {
+    color: tomato;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

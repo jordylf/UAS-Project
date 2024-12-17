@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B</title>
+</head>
+<style>
+    body {
+        background-color: yellow;
+        padding-top: 35vh;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+</style>
+
+<body>
+    <script>
+        var angka = [1, 2, 7, 10, 30, 3, 5, 9, 4];
+        var angka2 = angka.filter(function (number) {
+            return number > 5;
+        });
+        document.write("<h3>B. Menyaring data array (Filter) </h3>")
+        document.write(`Angka-angka yang ingin di filter : ${angka} <br>`);
+        document.write(`Angka yang difilter lebih dari 5 adalah : ${angka2.join(' - ')}`);
+    </script>
+</body>
+
+</html>

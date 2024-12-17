@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap%27');
+
+    *,
+    html {
+        padding: 0;
+        margin: 0;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #ECF1FA;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .--tagline {
+        position: fixed;
+        left: 50%;
+        bottom: 0;
+        padding: 8px 16px;
+        border-radius: 8px 8px 0 0;
+        background-color: #D81B60;
+        color: #FFFFFF;
+        font-weight: bold;
+        transform: translateX(-50%);
+        transition: padding .25s ease-out;
+        cursor: pointer;
+    }
+
+    .--tagline a {
+        color: #FFFFFF;
+    }
+
+    .--tagline:hover {
+        padding: 16px;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+        padding: 16px 15%;
+        background-color: #FFFFFF;
+        border-bottom: 1px solid rgba(166, 166, 166, .16);
+        box-shadow: 0 4px 12px rgba(77, 77, 77, .23)
+    }
+
+    header .--header_nav {
+        justify-self: flex-end;
+    }
+
+    header .--header_nav p {
+        display: inline-block;
+        margin-right: 8px;
+    }
+
+    header h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    header h3 span {
+        color: #E91E63;
+    }
+
+    .--btn {
+        display: inline-block;
+        padding: 12px 32px;
+        background-color: #777777;
+        color: #FFFFFF;
+        border-radius: 4px;
+        font-size: .85rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .--btn.--btn_pink {
+        background-color: #E91E63;
+    }
+
+    .--btn.--btn_pink:hover {
+        background-color: #95103d;
+        transition: ease-in-out .2s;
+    }
+
+    .nav {
+        width: 70%;
+        padding: 8px 15%;
+        background-color: #212121;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .nav ul li {
+        display: inline-block;
+        margin: 0 16px;
+    }
+
+    .nav ul li:first-child {
+        margin-left: 0;
+    }
+
+    .nav ul li a {
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+
+    .nav ul li a:hover {
+        transition: ease-in .2s;
+        color: #E91E63;
+    }
+
+
+    .head {
+        min-height: 22rem;
+        position: relative;
+        display: table;
+        width: 100%;
+        height: auto;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .head h1,
+    .head .h1 {
+        font-size: 4rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        padding-left: 55vh;
+    }
+
+    .text-1 {
+        margin-bottom: 0.25rem;
+    }
+
+    .btn-primary {
+        display: inline-block;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #fff;
+        background-color: #E91E63;
+        border: 1px solid;
+        border-radius: 0.25rem;
+    }
+
+    .btn-primary:hover {
+        background-color: #95103d;
+        transition: ease-in-out .2s;
+    }
+</style>
+
+<body>
+    <header id="allButton">
+        <div class="--header_logo">
+            <a>
+                <h3><span>TUGAS</span> Web by Jordy</h3>
+            </a>
+        </div>
+        <div class="--header_nav">
+            <a href="register.html" class="--btn --btn_pink">Logout</a>
+        </div>
+    </header>
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="utama.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About Me</a>
+            </li>
+            <li>
+                <a href="artikel.html">Article</a>
+            </li>
+            <li>
+                <a href="video.html">My Video</a>
+            </li>
+            <li>
+                <a href="song.html">My Song</a>
+            </li>
+        </ul>
+    </div>
+    <div class="head">
+        <div class="container">
+            <h1 class="text-1">Hi, Nama saya Jordy.</h1>
+            <h3 class="mb-5"><em>Saya mahasiswa Teknologi Informasi Dari UNSADA</em></h3>
+            <a class="btn btn-primary btn-xl" href="about.html">Tentang Saya?</a>
+        </div>
+    </div>
+</body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('body').append(`<div class="--tagline"><a href="https://www.instagram.com/jordyy.lf/" target="_blank">#JordyMadeThis</a></div>`);
+        document.write("2022 &copy Jordy Lian Ferdinand");
+        console.log("Halo Saya Jordy")
+    </script>
+</html>

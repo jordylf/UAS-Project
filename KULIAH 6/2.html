@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NO. 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    :root {
+        --bg-color: #222327;
+        --text-color: #fff;
+        --main-color: #29fd53;
+    }
+
+    body {
+        min-height: 100vh;
+        background: var(--bg-color);
+        color: var(--text-color);
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        padding: 28px 12%;
+        transition: all .50s ease;
+    }
+
+    .navbar {
+        display: flex;
+    }
+
+    .navbar a {
+        color: var(--text-color);
+        font-size: 1.1rem;
+        font-weight: 500;
+        padding: 5px 0;
+        margin: 0px 30px;
+        transition: all .50s ease;
+    }
+
+    .navbar a:hover {
+        color: var(--main-color);
+    }
+
+    .navbar a.active {
+        color: var(--main-color);
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .footer {
+        color: var(--text-color);
+        text-decoration: none;
+    }
+
+    nav {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        color: var(--main-color);
+        padding: 15px;
+        text-decoration: none;
+        font-weight: 80;
+        letter-spacing: 5px;
+    }
+
+    nav a:hover {
+        cursor: pointer;
+        color: var(--main-color);
+        transition: all .50s ease;
+    }
+</style>
+
+<body>
+    <header>
+        <ul class="navbar">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="1.html">NO. 1</a></li>
+            <li><a href="#" class="active">NO. 2</a></li>
+            <li><a href="3.html" target="_blank">NO. 3</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <div>
+            <p align="center">2. Jelaskan file apa saja yang bisa ditarik dalam video dan musik di HTML? jawab secara
+                detail</p>
+            <p align="center">JAWABAN :</p>
+            <p>- VIDEO = MP4, Ogg Theora, WebM</p>
+            <a href="https://www.apacara.com/tutorial/html/html-video-tag.html" target="_blank" style="color: #29fd53;">(Detail Video)</a>
+            <br>
+            <br>
+            <p>- MUSIK = MP3, Ogg, WAV</p>
+            <a href="https://www.tneutron.net/mikro/format-tampilan-audio-berbasis-html/" target="_blank" style="color: #29fd53;">(Detail
+                Musik)</a>
+        </div>
+    </div>
+    <div>
+        <nav>
+            <a class="footer" href="1.html">PREVIOUS</a>
+            <a class="footer" href="3.html" target="_blank">NEXT</a>
+        </nav>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap%27');
+
+    *,
+    html {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #ECF1FA;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .--tagline {
+        position: fixed;
+        left: 50%;
+        bottom: 0;
+        padding: 8px 16px;
+        border-radius: 8px 8px 0 0;
+        background-color: #D81B60;
+        color: #FFFFFF;
+        font-weight: bold;
+        transform: translateX(-50%);
+        transition: padding .25s ease-out;
+        cursor: pointer;
+    }
+
+    .--tagline a {
+        color: #FFFFFF;
+    }
+
+    .--tagline:hover {
+        padding: 16px;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+        padding: 16px 15%;
+        background-color: #FFFFFF;
+        border-bottom: 1px solid rgba(166, 166, 166, .16);
+        box-shadow: 0 4px 12px rgba(77, 77, 77, .23)
+    }
+
+    header .--header_nav {
+        justify-self: flex-end;
+    }
+
+    header .--header_nav p {
+        display: inline-block;
+        margin-right: 8px;
+    }
+
+    header h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    header h3 span {
+        color: #E91E63;
+    }
+
+    .--btn {
+        display: inline-block;
+        padding: 12px 32px;
+        background-color: #777777;
+        color: #FFFFFF;
+        border-radius: 4px;
+        font-size: .85rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .--btn.--btn_pink {
+        background-color: #E91E63;
+    }
+
+    .--btn.--btn_pink:hover {
+        background-color: #95103d;
+        transition: ease-in-out .2s;
+    }
+
+    .nav {
+        width: 70%;
+        padding: 8px 15%;
+        background-color: #212121;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .nav ul li {
+        display: inline-block;
+        margin: 0 16px;
+    }
+
+    .nav ul li:first-child {
+        margin-left: 0;
+    }
+
+    .nav ul li a {
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+
+    .nav ul li a:hover {
+        transition: ease-in .2s;
+        color: #E91E63;
+    }
+
+
+    .top {
+        padding-top: 5vh;
+        text-align: center;
+    }
+
+
+    .content {
+        padding-left: 50vh;
+        width: 100vh;
+        align-items: center;
+        text-align: justify;
+        font-size: small;
+    }
+
+    .produce li {
+        color: #E91E63;
+    }
+</style>
+
+<body>
+    <header id="allButton">
+        <div class="--header_logo">
+            <a>
+                <h3><span>TUGAS</span> Web by Jordy</h3>
+            </a>
+        </div>
+        <div class="--header_nav">
+            <a href="register.html" class="--btn --btn_pink">Logout</a>
+        </div>
+    </header>
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="utama.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About Me</a>
+            </li>
+            <li>
+                <a href="artikel.html">Article</a>
+            </li>
+            <li>
+                <a href="video.html">My Video</a>
+            </li>
+            <li>
+                <a href="song.html">My Song</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="top">
+        <h4><u>Artikel Tentang Game Kesukaan Saya</u></h4>
+        <h2>GAME : GOD OF WAR</h2>
+        <img src="images/gow.jpg" alt="GOW" width="520" height="280">
+        <p style="padding-right: 25rem; font-size: 12px;">sumber : playstation</p>
+    </div>
+    <br>
+    <div class="content">
+        <p>
+            God of War adalah permainan video aksi penjelajahan yang dikembangkan oleh Santa Monica Studio dan
+            diterbitkan oleh Sony Interactive Entertaiment (SIE). Dirilis pada tanggal 20 April 2018, untuk PlayStation
+            4, permainan ini adalah instalmen kedelapan dari seri God of War, urutan kedelapan secara kronologis, dan
+            merupakan sekuel untuk God of War III tahun 2010. Tidak seperti game sebelumnya, yang biasanya didasarkan
+            pada mitologi Yunani, game ini didasarkan pada mitologi Nordik. Tokoh utama protagonis, Kratos, mantan Dewa
+            Perang Yunani, dan putranya Atreus. Setelah kematian istri kedua Kratos yang merupakan ibunya Atreus, mereka
+            melakukan perjalanan untuk memenuhi janjinya dan menyebarkan abu mayatnya di puncak tertinggi dari sembilan
+            dunia. Kratos tetap merahasiakan masa lalunya yang bermasalah dari Atreus, yang tidak mengetahui kemampuan
+            dewanya. Sepanjang perjalanan mereka, mereka bertemu dengan monster dan dewa-dewa dari dunia Nordik.
+        </p>
+        <br>
+        <ul>
+            <div class="produce">
+                <li><b>Pengembang:</b></li><p>SIE Santa Monica Studio</p>
+                <li><b>Penerbit:</b></li><p>Sony Interactive Entertaiment</p>
+                <li><b>Pengarah:</b></li><p>Cory Barlog</p>
+            </div>
+            <li style="color: #E91E63;"><b>Produser:</b></li>
+                <ol>
+                    <li>Elizabeth Dahm Wang</li>
+                    <li>Sean Llewellyn</li>
+                    <li>Chad Cox</li>
+                    <li>Eric Fong</li>
+                </ol>
+        </ul>
+        <br>
+        <p>Sumber : <a href="https://id.wikipedia.org/wiki/God_of_War_(permainan_video_2018)" target="_blank">Wikipedia</a></p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('body').append(`<div class="--tagline"><a href="https://www.instagram.com/jordyy.lf/" target="_blank">#JordyMadeThis</a></div>`);
+        document.write("2022 &copy Jordy Lian Ferdinand");
+        console.log("Ini Menu Tentang Game Kesukaan Saya")
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Video</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap%27');
+
+    *,
+    html {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .btn {
+        text-align: center;
+        margin-top: 10px;
+        padding-bottom: 0.6rem;
+        border-bottom: 2px solid #000;
+    }
+
+
+    .btn a {
+        color: #272222;
+        padding: 5px 10px;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .btn a:hover {
+        color: #29fd53;
+        transition: ease-in-out .3s;
+    }
+
+    .main:hover {
+        background-color: rgb(255, 0, 0);
+        transition: ease-in-out .3s;
+    }
+
+    .active {
+        background-color: #29fd53;
+    }
+
+    .active:hover {
+        background-color: #74ff90;
+    }
+
+    .top {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .video-container {
+        margin: 40px 0px 40px 0px;
+        display: flex;
+    }
+
+    .video {
+        display: flex;
+    }
+
+    .video-left,
+    .video-right {
+        max-width: 50%;
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        align-content: stretch;
+        flex-direction: column;
+    }
+
+    .video-title {
+        width: 100%;
+        text-align: center;
+        font-size: 48px;
+        margin-top: 20px;
+        color: #1e3932;
+    }
+
+    .video-description {
+        text-align: center;
+        padding: 30px 60px 30px 60px;
+        font-size: 18px;
+    }
+
+    .under {
+        padding-left: 65vh;
+        align-items: center;
+        text-align: center;
+        display: flex;
+    }
+</style>
+
+<body>
+    <div class="btn">
+        <a href="register.html" class="main" style="color: #272222;">Logout</a>
+        <a href="utama.html">Home</a>
+        <a href="artikel.html">Article</a>
+        <a href="video.html" class="active">My Video</a>
+        <a href="song.html">My Song</a>
+    </div>
+
+    <div class="top">
+        <h1>Video Ini Saya Ambil Dari Youtube Saya</h1>
+    </div>
+
+    <div class="video-container">
+        <div class="video" style="background-color: #29fd53">
+            <div class="video-right">
+                <div class="video-title" style="color : #222327;">
+                    <p>Embed Youtube Video #1</p>
+                </div>
+                <div class="video-description" style="color : #222327;">
+                    <p>Ini editan saya yang berjudul "ini video 100% (iklan) copycat" dengan anime yang berjudul "K-ON"</p>
+                </div>
+            </div>
+            <div class="video-left">
+                <iframe width="620" height="315" src="https://www.youtube.com/embed/mhpzUPpWD8g"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-container">
+        <div class="video" style="background-color: #222327">
+            <div class="video-left">
+                <video width="500px" height="500px" controls>
+                    <source src="videos/jordy.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-right">
+                <div class="video-title" style="color: #29fd53;">
+                    <p>Video Tanpa Embed #2</p>
+                </div>
+                <div class="video-description" style="font-size: 22px; color: #29fd53;">
+                    <p>Ini editan saya yang berjudul "we get high" dengan anime yang berjudul "Cowboy Bebop"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="under">
+        <h3>Liat Selengkap Nya Di Youtube Saya -></h3>
+        <br>
+        <a href="https://www.youtube.com/channel/UCuhinj9XxITF057iweuUHkA" target="_blank"><img src="images/youtubelogo.png" alt="logo" width="200px" height="150px"></a>
+    </div>
+</body>
+
+</html>

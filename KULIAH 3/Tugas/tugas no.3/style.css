@@ -1,0 +1,92 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: pink;
+}
+
+.navbar-container {
+    background-color: pink;
+    height: 10vh;
+}
+
+.ul-navbar {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.li-navbar {
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: white;
+    list-style-type: none;
+    padding: 20px;
+    color: blue;
+    margin: 5px;
+}
+
+.li-navbar:hover {
+    background-color: orchid;
+    transition: .2s ease-in-out;
+    transition-delay: .3s;
+    border-radius: 8px;
+}
+
+.a-navbar {
+    color: black;
+    text-decoration: none;
+}
+
+.container-content {
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.img-content {
+    width: 220px;
+    height: 170px;
+}
+
+.a-content {
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    width: 420px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 80px;
+    box-shadow: 8px 10px 0px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 8px 10px 0px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 8px 10px 0px -2px rgba(0,0,0,0.75);
+}
+
+.container-footer {
+    background-color: orchid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1-footer {
+    font-size: 40px;
+}
+/* TAMPILAN HOME SELESAI */
+
+body {
+    /* Typography Declarations */
+    color: #222222;
+    font-size: 1em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}

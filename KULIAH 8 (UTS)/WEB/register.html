@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulir</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <center>
+        <h3><u>Isi Form Di Bawah Ini</u></h3>
+    </center>
+    <fieldset class="form">
+        <legend>
+            <p><b> Formulir Isian </b></p>
+        </legend>
+        <form>
+            <table width="100%">
+                <tr>
+                    <td><b>Nama*</b></td>
+                    <td>:</td>
+                    <td><input type="text" name="nama" size="40" required placeholder="Input Nama Anda"></td>
+                </tr>
+                <tr>
+                    <td><b>Nim anda*</b></td>
+                    <td>:</td>
+                    <td><input type="number" name="Nim Anda" size="40" max="99999" required placeholder="Input Nim Anda"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" value="L" checked name="jkl" />Laki-laki
+                        <input type="radio" name="jkl" value="p" />Perempuan
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>:</td>
+                    <!--rowsnya = Tinggi, cols = Lebar-->
+                    <td><textarea name="alamat" cols="100" rows="9"> </textarea></td>
+                </tr>
+                <tr>
+                    <td>Provinsi</td>
+                    <td>:</td>
+                    <td>
+                        <select name="provinsi">
+                            <option>Jawa Barat</option>
+                            <option>Jawa Tengah</option>
+                            <option>Jawa Timur</option>
+                        </select>
+                    </td>
+                </tr>
+                    <td>Kelas:</td>
+                    <td>:</td>
+                    <td><input type="text" name="nama" size="60" Value="Pemrograman Web" readonly></td>
+                </tr>
+                <tr>
+                    <td>Foto Anda (Formal)</td>
+                    <td>:</td>
+                    <td><input type="file" name="foto" value="inggris" class="file-foto">*file harus berupa jpg/png</td>
+                </tr>
+            </table>
+            <div class="ceklis">
+                <label>
+                    <input type="checkbox">
+                    <span class="checkmark">Sudah menyetujui syarat dan ketentuan?</span>
+                </label>
+            </div>
+            <p class="register-button">
+                <button input type="submit" value="Register" class="reg"><a href="utama.html" class="linked">Register</a></button>
+                <button input type="reset" value="Reset" class="reg">Reset</button>
+            </p>
+        </form>
+    </fieldset>
+</body>
+</html>

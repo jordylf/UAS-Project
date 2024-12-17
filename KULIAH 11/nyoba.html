@@ -1,0 +1,34 @@
+<html>
+
+<body>
+    <h2>Mempelajari Javascript Perbandingan</h2>
+    <p>Masukkan Umur Anda:</p>
+    <input id="usia" placeholder="Masukkan Angka Jangan Huruf " />
+    <button onclick="Compare()"> Coba Tekan </button>
+    <p id="Coba"></p>
+    <script>
+        function Compare() {
+            var umur, keterangan;
+            umur = Number(document.getElementById("usia").value);
+//isNan() merupakan sebuah function yang menguji apakah nilai dari parameter expression
+//itu adalah bukan angka.
+// Kalau nilai expression tersebut adalah bukan angka maka fungsi ini akan mengembalikan nilai true
+            if (isNaN(umur)) {
+                keterangan = "Inputan bukan nomor";
+            } else if (umur.value == "") {
+                keterangan = "ini kosong"
+            } else {
+                if (umur < 18) {
+                    keterangan = "Terlalu Muda";
+                } else if (umur < 30) {
+                    keterangan = "Anda Muda";
+                } else {
+                    keterangan = "Anda Tua"
+                }
+            }
+            document.getElementById("Coba").innerHTML = keterangan;
+        }
+    </script>
+</body>
+
+</html>

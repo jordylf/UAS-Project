@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap%27');
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+
+    *,
+    html {
+        padding: 0;
+        margin: 0;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .btn {
+        text-align: center;
+        margin-top: 10px;
+        padding-bottom: 0.6rem;
+        border-bottom: 2px solid #272222;
+    }
+
+
+    .btn a {
+        color: #272222;
+        padding: 5px 10px;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .btn a:hover {
+        color: #29fd53;
+        transition: ease-in-out .3s;
+    }
+
+    .main:hover {
+        background-color: rgb(255, 0, 0);
+        transition: ease-in-out .3s;
+    }
+
+    .active {
+        background-color: #29fd53;
+    }
+
+    .active:hover {
+        background-color: #74ff90;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 5rem;
+        text-align: center;
+    }
+
+    .wrapper h1 {
+        font-size: 7rem;
+        text-transform: uppercase;
+    }
+
+    .wrapper h1 span {
+        color: #29fd53;
+    }
+
+    .wrapper h2 {
+        font-weight: 600;
+    }
+
+    .content {
+        margin-top: 1.5rem;
+        margin-left: 25rem;
+        text-align: justify;
+    }
+
+    .content h5 {
+        color: #29fd53;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .table-all {
+        padding-left: 50vh;
+    }
+
+    .rwd-table {
+        padding: 0 2em;
+        background: #272222;
+        color: #fff;
+        border-radius: .4em;
+        overflow: hidden;
+        font-family: Montserrat, sans-serif;
+        text-align: center;
+    }
+
+    th, td {
+        margin: .5em .5em;
+    }
+
+    th, td:before {
+        color: #29fd53;
+    }
+    
+</style>
+
+<body>
+    <div class="btn" id="allButton">
+        <a href="register.html" class="main" style="color: #272222;">Logout</a>
+        <a href="utama.html" class="active">Home</a>
+        <a href="artikel.html">Article</a>
+        <a href="video.html">My Video</a>
+        <a href="song.html">My Song</a>
+    </div>
+    <br>
+    <div class="wrapper">
+        <h1>hi<span>!</span></h1>
+        <h2><i>TERIMA KASIH SUDAH REGISTRASI UNTUK MELIHAT WEB TUGAS UTS SAYA :D</i></h2>
+    </div>
+    <div class="content">
+        <h3>Perkenalkan</h3>
+        <p>Nama Saya Jordy Lian Ferdinand</p>
+        <p>Saya adalah Mahasiswa Teknologi Informasi, Universitas Darma Persada.</p>
+        <p>Saya suka Internet, Teknologi, dan Membangun hal-hal yang indah.</p>
+        <br>
+        <h3>More About Me :</h3>
+        <h5><i>Apa Saja Hobi Mu?</i></h5>
+        <ol>
+            <li>Ngedit</li>
+            <li>Coding</li>
+            <li>Makan</li>
+            <li>Mandi</li>
+            <li>Tidur</li>
+        </ol>
+    </div>
+    <br>
+
+    <h2>Table List Top 3 Film Kesukaan Saya Yang Mungkin Anda Tertarik</h2>
+    <div class="table-all">
+        <table width="70%" class="rwd-table">
+            <tr>
+                <th>Judul Film</th>
+                <th>Genre</th>
+                <th>Tahun</th>
+                <th>Penilaian Saya</th>
+            </tr>
+            <tr>
+                <td>Star Wars</td>
+                <td>Adventure, Sci-fi</td>
+                <td>1977</td>
+                <td>10/10</td>
+            </tr>
+            <tr>
+                <td>The God Father</td>
+                <td>Mafia, Drama</td>
+                <td>1972</td>
+                <td>10/10</td>
+            </tr>
+            <tr>
+                <td>The Dark Knight</td>
+                <td>Action, Superhero</td>
+                <td>2008</td>
+                <td>10/10</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <h3 align="center"><I>Mau Eksplor Web Saya Lebih Dalam Lagi? <a href="#allButton">Klik Ini</a> <br> Dan Klik Menu Yang Ada Diatas</I></h3>
+    <br>
+</body>
+
+</html>

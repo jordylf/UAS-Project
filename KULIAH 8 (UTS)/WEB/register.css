@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap%27');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.form {
+    margin: 20px;
+    padding: 0 10px;
+    border: 1px solid #666;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #666;
+    padding-top: 2px;
+    background-color: #29fd53;
+}
+
+.ceklis {
+    margin-top: 10px;
+}
+
+.ceklis span {
+    font-size: 14px;
+    color: #757575;
+}
+
+input {
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+textarea {
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+select {
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+.file-foto {
+    border: none;
+}
+
+.register-button {
+    text-align: center;
+}
+
+.reg {
+    width: 50%;
+    font-size: 15px;
+    border: 0px;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+
+.linked {
+    text-decoration: none;
+    color: #000;
+}
+
+.reg:hover, .linked:hover {
+    background: #f3fc8d;
+    transition: ease-in .2s;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="Coba"></p>
+    <script>
+        var Hari;
+        switch (new Date().getDay()) {
+            case 0:
+                Hari = "Minggu";
+                break;
+            case 1:
+                Hari = "Senin";
+                break;
+            case 2:
+                Hari = "Selasa";
+                break;
+            case 3:
+                Hari = "Rabu";
+                break;
+            case 4:
+                Hari = "Kamis";
+                break;
+            case 5:
+                Hari = "Jum'at";
+                break;
+            case 6:
+                Hari = "Sabtu";
+        }
+        document.getElementById("Coba").innerHTML = "Ini Adalah Hari " + Hari;
+    </script>
+</body>
+
+</html>

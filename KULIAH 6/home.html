@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NO. 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --bg-color: #222327;
+    --text-color: #fff;
+    --main-color: #29fd53;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+.navbar a.active {
+    color: var(--main-color);
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    color: var(--main-color);
+}
+
+.content-footer {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+</style>
+
+<body>
+    <header>
+        <ul class="navbar">
+            <li><a href="#" class="active">HOME</a></li>
+            <li><a href="1.html">NO. 1</a></li>
+            <li><a href="2.html">NO. 2</a></li>
+            <li><a href="3.html" target="_blank">NO. 3</a></li>
+        </ul>
+    </header>
+
+    <div class="cta">
+        <h1 class="text">TUGAS PEMROGRAMAN WEB KE 6 / PAK AFRI YUDA</h1>
+    </div>
+    <div class="content-footer">
+        <p>2022 &copy; Jordy Lian Ferdinand</p>
+    </div>
+</body>
+
+</html>

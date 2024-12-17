@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Video</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap%27');
+
+    *,
+    html {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #ECF1FA;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .--tagline {
+        position: fixed;
+        left: 50%;
+        bottom: 0;
+        padding: 8px 16px;
+        border-radius: 8px 8px 0 0;
+        background-color: #D81B60;
+        color: #FFFFFF;
+        font-weight: bold;
+        transform: translateX(-50%);
+        transition: padding .25s ease-out;
+        cursor: pointer;
+    }
+
+    .--tagline a {
+        color: #FFFFFF;
+    }
+
+    .--tagline:hover {
+        padding: 16px;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+        padding: 16px 15%;
+        background-color: #FFFFFF;
+        border-bottom: 1px solid rgba(166, 166, 166, .16);
+        box-shadow: 0 4px 12px rgba(77, 77, 77, .23)
+    }
+
+    header .--header_nav {
+        justify-self: flex-end;
+    }
+
+    header .--header_nav p {
+        display: inline-block;
+        margin-right: 8px;
+    }
+
+    header h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    header h3 span {
+        color: #E91E63;
+    }
+
+    .--btn {
+        display: inline-block;
+        padding: 12px 32px;
+        background-color: #777777;
+        color: #FFFFFF;
+        border-radius: 4px;
+        font-size: .85rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .--btn.--btn_pink {
+        background-color: #E91E63;
+    }
+
+    .--btn.--btn_pink:hover {
+        background-color: #95103d;
+        transition: ease-in-out .2s;
+    }
+
+    .nav {
+        width: 70%;
+        padding: 8px 15%;
+        background-color: #212121;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .nav ul li {
+        display: inline-block;
+        margin: 0 16px;
+    }
+
+    .nav ul li:first-child {
+        margin-left: 0;
+    }
+
+    .nav ul li a {
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+
+    .nav ul li a:hover {
+        transition: ease-in .2s;
+        color: #E91E63;
+    }
+
+    .top {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .video-container {
+        margin: 40px 0px 40px 0px;
+        display: flex;
+    }
+
+    .video {
+        display: flex;
+    }
+
+    .video-left,
+    .video-right {
+        max-width: 50%;
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        align-content: stretch;
+        flex-direction: column;
+    }
+
+    .video-title {
+        width: 100%;
+        text-align: center;
+        font-size: 48px;
+        margin-top: 20px;
+        color: #1e3932;
+    }
+
+    .video-description {
+        text-align: center;
+        padding: 30px 60px 30px 60px;
+        font-size: 18px;
+    }
+
+    .under {
+        padding-left: 65vh;
+        align-items: center;
+        text-align: center;
+        display: flex;
+    }
+</style>
+
+<body>
+
+    <body>
+        <header id="allButton">
+            <div class="--header_logo">
+                <a>
+                    <h3><span>TUGAS</span> Web by Jordy</h3>
+                </a>
+            </div>
+            <div class="--header_nav">
+                <a href="register.html" class="--btn --btn_pink">Logout</a>
+            </div>
+        </header>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="utama.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About Me</a>
+                </li>
+                <li>
+                    <a href="artikel.html">Article</a>
+                </li>
+                <li>
+                    <a href="video.html">My Video</a>
+                </li>
+                <li>
+                    <a href="song.html">My Song</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="top">
+            <h2>Video Ini Saya Ambil Dari Youtube Saya</h2>
+        </div>
+
+        <div class="video-container">
+            <div class="video" style="background-color: #E91E63">
+                <div class="video-right">
+                    <div class="video-title" style="color : #222327;">
+                        <p>Embed Youtube Video #1</p>
+                    </div>
+                    <div class="video-description" style="color : #222327;">
+                        <p>Ini editan saya yang berjudul "ini video 100% (iklan) copycat" dengan anime yang berjudul
+                            "K-ON"</p>
+                    </div>
+                </div>
+                <div class="video-left">
+                    <iframe width="620" height="315" src="https://www.youtube.com/embed/mhpzUPpWD8g"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <div class="video" style="background-color: #222327">
+                <div class="video-left">
+                    <video width="500px" height="500px" controls>
+                        <source src="videos/jordy.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-right">
+                    <div class="video-title" style="color: #E91E63;">
+                        <p>Video Tanpa Embed #2</p>
+                    </div>
+                    <div class="video-description" style="font-size: 22px; color: #E91E63;">
+                        <p>Ini editan saya yang berjudul "we get high" dengan anime yang berjudul "Cowboy Bebop"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="under">
+            <h3>Liat Selengkap Nya Di Youtube Saya -></h3>
+            <br>
+            <a href="https://www.youtube.com/channel/UCuhinj9XxITF057iweuUHkA" target="_blank"><img
+                    src="images/youtubelogo.png" alt="logo" width="200px" height="150px"></a>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $('body').append(`<div class="--tagline"><a href="https://www.instagram.com/jordyy.lf/" target="_blank">#JordyMadeThis</a></div>`);
+            document.write("2022 &copy Jordy Lian Ferdinand");
+            console.log("Ini Menu Tentang Video Editing Saya")
+        </script>
+    </body>
+
+</html>

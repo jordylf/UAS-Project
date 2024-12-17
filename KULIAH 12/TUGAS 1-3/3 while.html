@@ -1,0 +1,23 @@
+<html>
+
+<body>
+    <h2>Javascript Perulangan While</h2>
+    <p>Isi dengan angka : <input type="number" id="number" placeholder="masukkan angka"></p>
+    <button onclick="btn()">Hasil</button>
+    <br>
+    <div id="hasil"></div>
+</body>
+<script>
+    function btn() {
+        var count = 0;
+        var angka = document.getElementById("number").value;
+        document.getElementById("hasil").innerHTML = ("</br> Looping dimulai! </br>");
+        while (count <= angka) {
+            document.getElementById("hasil").innerHTML += ("Mulai Perulangan : " + count + "</br>");
+            count++;
+        }
+        document.getElementById("hasil").innerHTML += "Looping selesai!";
+    }
+</script>
+
+</html>

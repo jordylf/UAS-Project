@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NO. 2</title>
+</head>
+
+<style>
+    body {
+        background-color: yellow;
+        padding-top: 30vh;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+</style>
+
+<body>
+    <h3>2. Contoh Array 2 Dimensi</h3>
+</body>
+
+    <script>
+        let dataMahasiswa = [
+            ['Nama', 'NIM', 'Jurusan'],
+            ['Jordy', 2022230009, 'Teknologi Informasi'],
+            ['Irgi', 2022230007, 'Teknologi Informasi'],
+            ['Dzaky', 2022230010, 'Teknologi Informasi']
+        ];
+
+        document.write('<table>');
+
+        for (let i = 0; i < dataMahasiswa.length; i++) {
+            document.write('<tr>');
+            for (let j = 0; j < dataMahasiswa[i].length; j++) {
+                if (i == 0) {
+                    document.write(`<th style="padding: 10px">${dataMahasiswa[i][j]}</th>`);
+                } else {
+                    document.write(`<td style="padding: 10px">${dataMahasiswa[i][j]}</td>`);
+                }
+            }
+            document.write('</tr>');
+        }
+
+        document.write('</table>');
+
+    </script>
+
+</html>

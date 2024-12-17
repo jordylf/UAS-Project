@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap%27');
+
+    *,
+    html {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(to right, #29fd53, #272222)
+    }
+
+    .btn {
+        text-align: center;
+        margin-top: 10px;
+        padding-bottom: 0.6rem;
+        border-bottom: 2px solid #272222;
+    }
+
+    .btn a {
+        color: #272222;
+        padding: 5px 10px;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .btn a:hover {
+        color: #29fd53;
+        transition: ease-in-out .3s;
+    }
+
+    .main:hover {
+        background-color: rgb(255, 0, 0);
+        transition: ease-in-out .3s;
+    }
+
+    .active {
+        background-color: #29fd53;
+    }
+
+    .active:hover {
+        background-color: #74ff90;
+    }
+
+    .text {
+        padding-top: 5rem;
+        text-align: center;
+    }
+
+    .player {
+        position: absolute;
+        padding-left: 82vh;
+        padding-top: 2vh;
+        width: 350px;
+        border-radius: 20px;
+    }
+
+    .player .imgbox {
+        position: relative;
+        width: 100%;
+        height: 250px;
+    }
+
+    .player .imgbox img {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .player audio {
+        width: 100%;
+        outline: none;
+    }
+
+</style>
+
+<body>
+    <div class="btn">
+        <a href="register.html" class="main" style="color: #272222;">Logout</a>
+        <a href="utama.html">Home</a>
+        <a href="artikel.html">Article</a>
+        <a href="video.html">My Video</a>
+        <a href="song.html" class="active">My Song</a>
+    </div>
+
+    <div class="text">
+        <h3>Ini Highlight Rap Saya</h3>
+    </div>
+
+    <div class="player">
+        <div class="imgbox">
+            <img src="images/rap1.jpg" alt="lofi-1">
+        </div>
+        <audio src="audios/softskin by jordy.mp3" style="background-color: #f1f3f4; border-radius: 3px;" controls></audio>
+    </div>
+</body>
+
+</html>

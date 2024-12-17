@@ -1,0 +1,11 @@
+p {color: red;}
+h1 {color: blueviolet;}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+#header {
+    background: grey;
+    color: blue;
+}
